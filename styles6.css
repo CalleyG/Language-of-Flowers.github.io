@@ -1,0 +1,193 @@
+/* Calley Garvin, ITWP 1050 - CSS.
+This style sheet is for the "Language of Flowers, by Kate Greenaway" 
+HTML5 document.*/
+
+
+/* This content controls the text content and background of the webpage. */
+body {
+background:	rgb(255,182,193); width: 750px; height:40px; padding: 20px 0 0 300px; text-align: center;
+}
+
+/* This is an ID tag that styles my first header*/
+#myHeading1 { position: static; top: 175px; font-size: 40px; color:#4B0082; 
+}
+
+/* This styles the paragraph font size to 100%.*/
+p { font-size: 100%;
+}
+
+/*This sets the box elements to the block display. */
+header, article, figure, figcaption, aside, footer {
+	display: block; 
+}
+
+
+/* Styles that creates 3 block level elements which includes the use of div tags, unique ID's, and the same class for each element*/
+
+/*This article section is 1 of 2 elements where 2D transformation has been added.*/
+#article_block {
+	font-family: papyrus;
+	color: #FFC0CB;
+	background-image: linear-gradient(#F00, #FF69B4, #FFD700);
+	width: 300px;
+	height: 300px;
+	float: none;
+	overflow: scroll;
+	padding: 5px 10px 20px 5px;
+	position: relative;
+	opacity: 0.95;
+	box-shadow: 5px 10px 30px 10px rgb(255,0,0);
+	-webkit-transform: skewY(15deg);
+	-moz-transform: skewY(15deg);
+	-ms-transform: skewY(15deg);
+	-o-transform: skewY(15deg);
+	transform: skewY(15deg);
+ 
+}
+
+/*The inline CSS style for the h2 was deleted from the HTML5 document and styled here for my article section.*/
+article h2 {
+	color: #DA70D6;
+}
+
+
+
+/*Here is where the 3D effect is added and styled which is the third element styled.*/
+#figure_block {
+	font-family: Times;
+	background-image: linear-gradient(#F0F, #CD5C5C, #FF1493);
+	width: 300px;
+	height: 300px;
+	float: none;
+	overflow: hidden;
+	padding: 5px 10px 20px 5px;
+	position: relative;
+	opacity: 1;
+	border-style: ridge;
+	border-width: 80px;
+	border-color: rgb(153,50,204);
+	box-shadow: 5px 10px 30px 10px rgb(255,20,147);
+	-webkit-transform: perspective(350px) scale3d(1, 1, .75) rotate3d(-15,-15,-15,20deg);
+	-moz-transform: perspective(350px) scale3d(1, 1, .75) rotate3d(-15,-15,-15,20deg);
+	-o-transform: perspective(350px) scale3d(1, 1, .75) rotate3d(-15,-15,-15,20deg);
+	transform: perspective(350px) scale3d(1, 1, .75) rotate3d(-15,-15,-15,20deg);
+}
+
+/*The inline CSS style for the h2 was deleted from the HTML5 document and styled here for my figure section. */
+figure h2 {
+	font-family: Papyrus;
+	font-size: 28px;
+	font-weight: bold;
+	color:#B22222;
+}
+/* This is the 1 element where the color transition has been applied; 
+the color transitions from gold which is the initial color, and to teal once you 
+hover over it.*/
+figure {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  transition: all 2s ease;
+  background: rgb(218,165,32);
+  width: 275px;
+  height:400px;
+  margin: 15px -15px 15px 15px;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  
+}
+figure:hover {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background: rgb(0,255,255);
+  padding: 50px;
+ 
+}
+
+
+/*This aside section is 2 of 2 elements where 2D transformation has been added.*/	
+#aside_block {
+	font-family: Verdana;
+	color: #B8860B;
+	background-image: linear-gradient(#F0F8FF, #ADD8E6, #7FFFD4);
+	width: 300px;
+	height: 300px;
+	float: none;
+	overflow: auto;
+	padding: 5px 10px 20px 5px;
+	position: relative;
+	opacity: 0.85;
+	box-shadow: 5px 10px 30px 10px rgb(0,191,255);
+	-webkit-transform: skewY(15deg);
+	-moz-transform: skewY(15deg);
+	-ms-transform: skewY(15deg);
+	-o-transform: skewY(15deg);
+	transform: skewY(15deg);
+}
+
+
+/*The inline CSS style for the h2 was deleted from the HTML5 document and styled here for my aside section */
+aside h2{
+	color:#DC143C;
+}
+
+
+/*Here is where I styled the footer block.*/	
+
+#footer_block {
+	font-family: Papyrus; 
+	background-image: linear-gradient(#FFE4C4, #8A2BE2, #F0F);
+	width: 300px;
+	height: 150px;
+	float: none;
+	overflow: visible;
+	padding: 5px 10px 20px 5px;
+	position: relative;
+	opacity: 0.95;
+	box-shadow: 5px 10px 30px 10px rgb(148,0,211);
+}
+
+/* This styles the Class that is used for all three box elements and floats my boxes to the center. I also 
+styled the 2D element borders here. */
+.box_class {
+	font-weight: bold;
+	font-size: 20px;
+	border-style: groove;
+	border-width: 80px;
+	border-color: #E6E6FA; 
+    position: static;  
+    top: 50%; 
+    left: 50%; 
+    margin-top: 25px; 
+    margin-left: -250px;
+}
+
+/*I placed a border around my header image and figcaption image to create continuity within the webpage. */
+img {
+	border: 10px solid #4B0082;
+	width: 400px;
+	height: 400px;
+	box-shadow: 5px 0px 10px 8px rgb(218,112,214);
+}
+
+/* this styles the second image that is located in the figure section */
+.image2 {
+	width: 200px;
+	height: 200px;
+}
+	
+
+/*1 class implemented to rotate the image*/ 
+
+.rotate { animation:rotation 15s infinite linear;
+}
+
+@keyframes rotation { 
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform:rotate(159deg);
+	}
+}
+
